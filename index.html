@@ -30,6 +30,26 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог товаров</a>
+            <ul>
+              <li>
+                <a href="">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="">Квадрокоптеры</a>
+              </li>
+              <li>
+                <a href="">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="">Умные часы</a>
+              </li>
+              <li>
+                <a href="">Экшн-камеры</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="">Доставка</a>
@@ -42,26 +62,6 @@
           </li>
         </ul>
       </nav>
-      <ul class="visually-hidden">
-        <li>
-          <a href="">Виртуальная реальность</a>
-        </li>
-        <li>
-          <a href="">Фитнес-браслеты</a>
-        </li>
-        <li>
-          <a href="">Квадрокоптеры</a>
-        </li>
-        <li>
-          <a href="">Моноподы для селфи</a>
-        </li>
-        <li>
-          <a href="">Умные часы</a>
-        </li>
-        <li>
-          <a href="">Экшн-камеры</a>
-        </li>
-      </ul>
     </header>
     <main>
       <h1 class="visually-hidden">Device - интернет-магазин гаджетов с оригинальным дизайном</h1>
@@ -266,27 +266,30 @@
           <a href="https://goo.gl/maps/t1BHJGnUhaJkedXv9">
             <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
           </a>
-          <p class="visualy-hidden">
+          <!--hidden popup with map-->
+          <div>
             <button aria-label="Закрыть"></button>
             <img src="img/map-big.jpg" alt="г. Москва, ул. Строителей, 15">
-          </p>
+          </div>
+          <!--hidden popup with map-->
           <a href="">Напишите нам</a>
-          <form class="visualy-hidden" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-              <label for="popup-write-us-name">Имя:</label>
-              <input type="text" name="name" placeholder="Имя Фамилия" id="popup-write-us-name">
-            </p>
-            <p>
-              <label for="popup-write-us-email">Ваш e-mail:</label>
-              <input type="text" name="email" placeholder="email@example.com" id="popup-write-us-email">
-            </p>
-            <p>
-              <label for="popup-write-us-message">Текст письма:</label>
-              <textarea name="message" id="popup-write-us-message" cols="30" rows="10"
-                placeholder="В свободной форме"></textarea>
-            </p>
-            <button type="submit">Отправить</button>
-          </form>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <p>
+                <label for="popup-write-us-name">Имя:</label>
+                <input type="text" name="name" placeholder="Имя Фамилия" id="popup-write-us-name">
+              </p>
+              <p>
+                <label for="popup-write-us-email">Ваш e-mail:</label>
+                <input type="email" name="email" placeholder="email@example.com" id="popup-write-us-email">
+              </p>
+              <p>
+                <label for="popup-write-us-message">Текст письма:</label>
+                <textarea name="message" id="popup-write-us-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+              </p>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
