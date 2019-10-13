@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"),
-    url("../fonts/opensans.woff") format("woff2"),
+    url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff")
 }
 
@@ -30,7 +30,7 @@
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans Light"),
-    url("../fonts/opensanslight.woff") format("woff2"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
     url("../fonts/opensanslight.woff") format("woff")
 }
 
@@ -295,7 +295,7 @@ img {
   border: none;
 }
 
-.filter-item legend {
+.filter-legend {
   font-size: 18px;
   font-weight: 800;
   line-height: 40px;
