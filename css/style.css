@@ -3,9 +3,9 @@
   font-style: normal;
   font-weight: 300;
   src: local("Gilroy Light"),
-  url("../fonts/gilroylight.woff2") format("woff2"),
-  url("../fonts/gilroylight.woff") format("woff"),
-  url("../fonts/gilroylight.eot") format("eot")
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff"),
+    url("../fonts/gilroylight.eot") format("eot")
 }
 
 @font-face {
@@ -284,11 +284,8 @@ img {
   color: #000000;
 }
 
-.partners-item a:hover img {
-  display: none;
-}
-
 .partners-item a:hover::before {
+  position: absolute;
   content: "";
   display: inline-block;
   width: 260px;
