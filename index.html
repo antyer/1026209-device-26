@@ -7,63 +7,70 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <a class="logo">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Интернет-магазин 'Device'">
-      </a>
-      <form class="search" action="https://echo.htmlacademy.ru" method="GET">
-        <input type="search" name="search" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
-      </form>
-      <ul class="user-nav">
-        <li class="user-nav-login">
-          <a href="">Войти</a>
-        </li>
-        <li class="user-nav-compare">
-          <a href="">Сравнить</a>
-        </li>
-        <li class="user-nav-cart">
-          <a href="">Корзина</a>
-        </li>
-      </ul> 
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li aria-haspopup="true">
-            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
-            <ul class="main-nav-sublist">
-              <li>
-                <a href="">Виртуальная реальность</a>
+    <header class="main-header container">
+      <div class="main-header-wrapper container">
+        <a class="logo">
+          <img src="img/logo-device.svg" width="163" height="35" alt="Интернет-магазин 'Device'">
+        </a>
+        <div class="nav-wrapper flex-row">
+          <div class="search">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <input type="search" name="search" placeholder="Поиск по сайту">
+              <button type="submit">Найти</button>
+            </form>
+          </div>
+          <ul class="user-nav-header m-p-reset list-reset flex-row">
+            <li class="user-nav-login">
+              <a href="">Войти</a>
+            </li>
+            <li class="user-nav-compare">
+              <a href="">Сравнить</a>
+            </li>
+            <li class="user-nav-cart">
+              <a href="">Корзина</a>
+            </li>
+          </ul> 
+        </div>
+          <nav class="main-nav">
+            <ul class="main-nav-list m-p-reset list-reset flex-row">
+              <li class="nav-item-catalog" aria-haspopup=" true">
+                <a href="catalog.html">Каталог товаров</a>
+                <ul class="main-nav-sublist">
+                  <li>
+                    <a href="">Виртуальная реальность</a>
+                  </li>
+                  <li>
+                    <a href="">Фитнес-браслеты</a>
+                  </li>
+                  <li>
+                    <a href="">Квадрокоптеры</a>
+                  </li>
+                  <li>
+                    <a href="">Моноподы для селфи</a>
+                  </li>
+                  <li>
+                    <a href="">Умные часы</a>
+                  </li>
+                  <li>
+                    <a href="">Экшн-камеры</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="">Фитнес-браслеты</a>
+              <li class="nav-item-delivery">
+                <a href="">Доставка</a>
               </li>
-              <li>
-                <a href="">Квадрокоптеры</a>
+              <li class="nav-item-warranty">
+                <a href="">Гарантия</a>
               </li>
-              <li>
-                <a href="">Моноподы для селфи</a>
-              </li>
-              <li>
-                <a href="">Умные часы</a>
-              </li>
-              <li>
-                <a href="">Экшн-камеры</a>
+              <li class="nav-item-contacts">
+                <a href="">Контакты</a>
               </li>
             </ul>
-          </li>
-          <li>
-            <a href="">Доставка</a>
-          </li>
-          <li>
-            <a href="">Гарантия</a>
-          </li>
-          <li>
-            <a href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+          </nav>
+
+      </div>
     </header>
-    <main class="container">
+    <main class="main container">
       <h1 class="visually-hidden">Device - интернет-магазин гаджетов с оригинальным дизайном</h1>
       <!--main slider-->
       <section class="slider">
@@ -230,23 +237,23 @@
         </ul>
       </section>
       <section class="about">
-        <div class="about-col-left">
-          <h2 class="about-title">О нас</h2>
+        <div class="about-col about-info m-p-reset">
+          <h2 class="about-title m-p-reset">О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
             компаниями:</p>
-          <ul class="about-list">
-            <li>Деловые линии</li>
+          <ul class="about-list list-reset">
+            <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
           <a class="button" href="">Подробнее о нас</a>
         </div>
-        <div class="about-col-right">
-          <h2 class="about-title">Контакты</h2>
+        <div class="about-col about-contacts m-p-reset">
+          <h2 class="about-title m-p-reset">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.</p>
-          <a href="https://goo.gl/maps/t1BHJGnUhaJkedXv9">
+          <a class="about-map-min" href="https://goo.gl/maps/t1BHJGnUhaJkedXv9">
             <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
           </a>
           <a class="button" href="">Напишите нам</a>
@@ -254,49 +261,70 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35" fill="#ffc600">
-          <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z" />
-        </svg>
-      </a>
-      <ul class="user-nav user-nav-footer">
-        <li>
-          <a class="user-nav-login" href="">Войти</a>
-        </li>
-        <li>
-          <a class="user-nav-compare" href="">Сравнить</a>
-        </li>
-        <li>
-          <a class="user-nav-cart" href="">Корзина</a>
-        </li>
-      </ul>
-      <p class="address">г. Москва, ул. Строителей, 15</p>
-      <ul class="main-nav-list main-nav-footer">
-        <li>
-          <a href="">Доставка</a>
-        </li>
-        <li>
-          <a href="">Гарантия</a>
-        </li>
-        <li>
-          <a href="">Контакты</a>
-        </li>
-      </ul>
-      <a class="phone" href="tel:+74954959595">Тел.:+7 (495) 495-95-95</a>
-      <ul class="social-list">
-        <li class="facebook">
-          <a href="">Facebook</a>
-        </li>
-        <li class="instagram">
-          <a href="">Instagram</a>
-        </li>
-        <li class="twitter">
-          <a href="">Twitter</a>
-        </li>
-      </ul>
-      <p class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
+      <div class="container">
+        <div class="footer-wrapper">        
+          <a class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35" fill="#ffc600">
+              <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z" />
+            </svg>
+          </a>
+          <ul class="user-nav-footer list-reset m-p-reset">
+            <li class="login-footer">
+              <a href="">
+                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+                  <path fill="#ffc500" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" />
+                </svg>Войти
+              </a>
+            </li>
+            <li class="compare-footer">
+              <a href="">
+                <svg class="compare-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                  <path fill="#ffc500" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z" />
+                </svg>Сравнить
+              </a>
+            </li>
+            <li class="cart-footer">
+              <a href="">
+                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                  <path fill="#ffc500" d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z" />
+                  <path fill="#ffc500" d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z" />
+                </svg>Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrapper">
+          <p class="address">г. Москва, ул. Строителей, 15</p>
+          <ul class="main-nav-list main-nav-footer m-p-reset list-reset">
+            <li>
+              <a href="">Доставка</a>
+            </li>
+            <li>
+              <a href="">Гарантия</a>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+          </ul>
+          <a class="phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="footer-wrapper ribbon">
+          <ul class="social-list list-reset m-p-reset">
+            <li>
+              <a class="facebook" href="">Facebook</a>
+            </li>
+            <li>
+              <a class="instagram" href="">Instagram</a>
+            </li>
+            <li>
+              <a class="twitter" href="">Twitter</a>
+            </li>
+          </ul>
+          <p class="copyright">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          </p>
+        </div>
+      </div>
     </footer>
     <div class="map-popup" id="map-popup">
       <button class="button-close" aria-label="Закрыть"></button>
