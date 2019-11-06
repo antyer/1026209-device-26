@@ -13,15 +13,14 @@
           <img src="img/logo-device.svg" width="163" height="35" alt="Интернет-магазин 'Device'">
         </a>
         <div class="nav-wrapper">
-          <div class="search">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <input type="search" name="search" placeholder="Поиск по сайту">
-              <button type="submit">Найти</button>
-            </form>
-          </div>
+          <form class="search" action="https://echo.htmlacademy.ru" method="GET">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input class="search-input" type="search" id="search" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit" name="find">Найти</button>
+          </form>
           <ul class="user-nav-header list-reset">
             <li class="user-nav-login">
-              <a href="">Валентин Петухов</a>
+              <a href="profile.html">Валентин Петухов</a>
             </li>
             <li class="user-nav-logout">
               <a href="">Выйти</a>
@@ -94,7 +93,7 @@
           </div>
           <div class="content-header wrapper">
             <p class="sort-title">Сортировка:</p>
-            <ul class="sort-list list-reset">
+            <ul class="sort-list sort-property list-reset">
               <li class="sort-item">
                 <a class="sort-action" href="">По цене</a>
               </li>
@@ -104,6 +103,8 @@
               <li class="sort-item">
                 <a class="sort-action" href="">По популярности</a>
               </li>
+            </ul>
+            <ul class="sort-list sort-order list-reset">
               <li class="sort-item">
                 <a class="sort-action arrow-up" href="">По возрастанию</a>
               </li>
@@ -116,48 +117,67 @@
       </div>
       <section class="catalog-page-content wrapper">
         <div class="container">
-
-          <div class="catalog-page-sidebar">
+          <div class="catalog-page-sidebar filter">
             <form class="filter-settings" action="https://echo.htmlacademy.ru" method="GET">
               <fieldset class="filter-item">
                 <legend class="filter-legend">
                   Стоимость
                 </legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filter-item">
                 <legend class="filter-legend">Цвет</legend>
-                <ul class="filter-options-list">
+                <ul class="filter-options-list list-reset">
                   <li class="filter-option">
-                    <input type="checkbox" name="filter-color" id="filter-color-black" value="black">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="filter-color"
+                      id="filter-color-black" value="black" checked>
                     <label for="filter-color-black">Черный</label>
                   </li>
                   <li class="filter-option">
-                    <input type="checkbox" name="filter-color" id="filter-color-white" value="white">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="filter-color"
+                      id="filter-color-white" value="white">
                     <label for="filter-color-white">Белый</label>
                   </li>
                   <li class="filter-option">
-                    <input type="checkbox" name="filter-color" id="filter-color-blue" value="blue">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="filter-color"
+                      id="filter-color-blue" value="blue" checked>
                     <label for="filter-color-blue">Синий</label>
                   </li>
                   <li class="filter-option">
-                    <input type="checkbox" name="filter-color" id="filter-color-red" value="red">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="filter-color"
+                      id="filter-color-red" value="red" checked>
                     <label for="filter-color-red">Красный</label>
                   </li>
                   <li class="filter-option">
-                    <input type="checkbox" name="filter-color" id="filter-color-pink" value="pink">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="filter-color"
+                      id="filter-color-pink" value="pink">
                     <label for="filter-color-pink">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-item">
+              <fieldset class="filter-item fieldset-bluetooth">
                 <legend class="filter-legend">Bluetooth</legend>
-                <ul class="filter-options-list">
+                <ul class="filter-options-list filter-bluetooth list-reset">
                   <li class="filter-option">
-                    <input type="radio" name="bluetooth" id="filter-bluetooth-yes" value="yes">
+                    <input class="filter-input filter-input-radio visually-hidden" type="radio" name="bluetooth"
+                      id="filter-bluetooth-yes" value="yes" checked>
                     <label for="filter-bluetooth-yes">Есть</label>
                   </li>
                   <li class="filter-option">
-                    <input type="radio" name="bluetooth" id="filter-bluetooth-no" value="no">
+                    <input class="filter-input filter-input-radio visually-hidden" type="radio" name="bluetooth"
+                      id="filter-bluetooth-no" value="no">
                     <label for="filter-bluetooth-no">Нет</label>
                   </li>
                 </ul>
@@ -210,7 +230,7 @@
               </div>
             </li>
 
-            <li class="catalog-list-item">
+            <li class="catalog-list-item new-item">
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <div class="catalog-item-wrapper">
                 <h3 class="catalog-item-title">
@@ -246,7 +266,6 @@
         </div>
 
       </section>
-
     </main>
     <footer class="footer">
       <div class="container">
